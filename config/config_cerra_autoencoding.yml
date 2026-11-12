@@ -94,7 +94,7 @@ norm_type: "LayerNorm"
 #####################################
 
 # streams_directory: "./config/streams/era5_1deg_forecasting/"
-# streams_directory: "./config/streams/cerra/"
+streams_directory: "./config/streams/cerra/"
 streams: ???
 
 # type of zarr_store
