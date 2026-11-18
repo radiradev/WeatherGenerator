@@ -1,0 +1,30 @@
+evaluation:
+  metrics: [rmse, mae]
+  score_plots: [metric_plots, bar]
+  summary_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/"
+  plot_ensemble: false
+  print_summary: true
+  log_scale: false
+  add_grid: false
+
+default_streams:
+  CERRA:
+    regions: ["europe"]
+    channels: ["10si", "r_850"]
+    evaluation:
+      forecast_step: "all"
+      sample: "all"
+    plotting:
+      sample: [0]
+      forecast_step: [1]
+      data_plots:
+        - maps:
+            predictions: [image]
+            target: [image]
+            bias: [image]
+
+run_ids:
+  mxtyinf1: {label: "CERRA, no FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/mxtyinf1", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/mxtyinf1"}
+  je43inf1: {label: "CERRA, FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/je43inf1", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/je43inf1"}
+  rlufinf1: {label: "CERRA+ERA5 input, no FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/rlufinf1", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/rlufinf1"}
+  isk9inf1: {label: "CERRA+ERA5 input, FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/isk9inf1", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/isk9inf1"}

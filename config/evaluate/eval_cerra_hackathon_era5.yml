@@ -1,0 +1,32 @@
+evaluation:
+  metrics:
+    - rmse
+    - mae
+    - psd:
+        psd_method: "sht"
+  score_plots: [metric_plots, bar]
+  summary_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/"
+  plot_ensemble: false
+  print_summary: true
+  log_scale: false
+  add_grid: false
+
+default_streams:
+  ERA5:
+    regions: ["global"]
+    channels: ["10u", "10v", "q_850"]
+    evaluation:
+      forecast_step: "all"
+      sample: "all"
+    plotting:
+      sample: [0]
+      forecast_step: [1]
+      data_plots:
+        - maps:
+            predictions: [image]
+            target: [image]
+            bias: [image]
+
+run_ids:
+  gjwginf0: {label: "ERA5 only, no FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/gjwginf0", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/gjwginf0"}
+  dwu8inf0: {label: "ERA5 only, FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/dwu8inf0", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/dwu8inf0"}
