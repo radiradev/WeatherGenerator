@@ -1,0 +1,7 @@
+run_id,config,description,forecast_engine,fe_num_blocks,chain_jobs,slurm_job_ids,submitted,branch,commit
+mxtynk0b,config/config_cerra_forecasting_no_fe.yml,CERRA +3h forecast without forecasting engine,no,0,4,1023898;1036453;1036454;1036455,2026-11-12 14:33,rradev/hackathon-cerra,7fbaf48d
+je43887w,config/config_cerra_forecasting_fe.yml,CERRA +3h forecast with forecasting engine (from scratch),yes,16,4,1023903;1036457;1036458;1036459,2026-11-12 14:34,rradev/hackathon-cerra,7fbaf48d
+rlufbwfc,config/config_cerra_era5_forecasting_no_fe.yml,CERRA +3h forecast with ERA5 O96 1h@3h input; no forecasting engine,no,0,4,1024327;1036461;1036462;1036463,2026-11-12 16:33,rradev/hackathon-cerra,611312f0
+isk98cas,config/config_cerra_era5_forecasting_fe.yml,CERRA +3h forecast with ERA5 O96 1h@3h input; with forecasting engine (from scratch),yes,16,4,1024333;1036465;1036466;1036467,2026-11-12 16:33,rradev/hackathon-cerra,611312f0
+gjwg0n0v,config/config_era5_forecasting_no_fe.yml,ERA5 O96 1h@3h only +3h forecast (CERRA-mirroring vars; targets 10u/10v/q_850); no forecasting engine,no,0,4,1024349;1036469;1036470;1036471,2026-11-12 16:41,rradev/hackathon-cerra,03dfa9c0
+dwu8hmc7,config/config_era5_forecasting_fe.yml,ERA5 O96 1h@3h only +3h forecast (CERRA-mirroring vars; targets 10u/10v/q_850); with forecasting engine (from scratch),yes,16,4,1024355;1036473;1036474;1036475,2026-11-12 16:41,rradev/hackathon-cerra,03dfa9c0
