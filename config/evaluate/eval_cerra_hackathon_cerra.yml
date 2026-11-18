@@ -24,7 +24,7 @@ default_streams:
             bias: [image]
 
 run_ids:
-  mxtyinf1: {label: "CERRA, no FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/mxtyinf1", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/mxtyinf1"}
-  je43inf1: {label: "CERRA, FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/je43inf1", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/je43inf1"}
-  rlufinf1: {label: "CERRA+ERA5 input, no FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/rlufinf1", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/rlufinf1"}
-  isk9inf1: {label: "CERRA+ERA5 input, FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/isk9inf1", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/isk9inf1"}
+  mxtyinf0: {label: "CERRA, no FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/mxtyinf0", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/mxtyinf0"}
+  je43inf0: {label: "CERRA, FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/je43inf0", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/je43inf0"}
+  rlufinf0: {label: "CERRA+ERA5 input, no FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/rlufinf0", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/rlufinf0"}
+  isk9inf0: {label: "CERRA+ERA5 input, FE", runplot_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/isk9inf0", metrics_base_dir: "/iopsstor/scratch/cscs/course_5a417627/inference_cerra/eval/isk9inf0"}
